@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
         val email = binding.etCorreo.text.toString()
         val clave = binding.etClave.text.toString()
 
-        //Login
         auth.signInWithEmailAndPassword(email,clave)
             .addOnCompleteListener{result ->
                 if (result.isSuccessful){
