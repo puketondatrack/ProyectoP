@@ -13,4 +13,36 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="noLogin">Usuario y Contraseña no valida </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="NombreLugar">Nombre del Lugar</string>
+    <string name="CorreoLugar">Email</string>
+    <string name="descripAlimento">"""""""</string>
+    <string name="precioAlimento">precio</string>
+
+    <string name="btAddAlimento">AGREGAR alimento</string>
+    <string name="ms_AddAlimento">alimento AGREGADO </string>
+    <string name="ms_FaltaValores">Faltan valores</string>
+    <string name="ms_UpdateAlimento">alimento modificado</string>
+
+
+    <string name="btUpdateLugar">Actualizar alimento</string>
+
+
+    <string name="bt_delete_alimento">Eliminar Alimento</string>
+    <string name="msg_alimento_deleted">alimento Eliminado…</string>
+    <string name="msg_seguro_borrado">¿Está seguro de aliminar el Alimento: </string>
+    <string name="msg_si">Si</string>
+    <string name="msg_no">No</string>
+
+    <string name="todo">todo</string>
+    <string name="msg_imagen">imagen</string>
+    <string name="msgEscucharAudio">Escuchar audio</string>
+
+
+    <string name="msgInicioNotaAudio">Grabando</string>
+    <string name="msgDetieneNotaAudio">Detiene Audio</string>
+    <string name="msgSubiendo">Subiendo los archivos</string>
 </resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.home.addAlimentoFragment"/>
+
+
+<EditText
+android:id="@+id/et_nombre"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="@string/Nombrealimento"
+android:inputType="textPersonName" />
+
+<EditText
+android:id="@+id/et_correo"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="@string/precioAlimento"
+android:inputType="textPersonName"
+android:padding="20dp" />
+
+<EditText
+android:id="@+id/et_telefono"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="@string/descripcionAlimento"
+android:inputType="textPersonName"
+android:padding="20dp" />
+
+<Button
+android:id="@+id/bt_Agregar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/btAddAlimento"
+android:padding="20dp"
+android:text="Button" />
+
+
+
+</LinearLayout>

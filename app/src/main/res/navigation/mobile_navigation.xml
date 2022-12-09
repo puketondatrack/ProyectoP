@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.example.proyectop.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addAlimentoFragment"
+            app:destination="@id/addAlimentoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.example.proyectop.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addAlimentoFragment"
+        android:name="com.example.proyectop.addAlimentoFragment"
+        android:label="fragment_add_alimento"
+        tools:layout="@layout/fragment_add_alimento" >
+        <action
+            android:id="@+id/action_addAlimentoFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>
