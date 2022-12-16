@@ -115,7 +115,7 @@ class addAlimentoFragment : Fragment() {
 
 
         if (nombre.isNotEmpty()) {
-            val alimento = Alimento(0, nombre, descripcion, caloria,rutaAudio,rutaImagen)
+            val alimento = Alimento("", nombre, descripcion, caloria,rutaAudio,rutaImagen)
             homeViewModel.guardarAlimento(alimento)
             Toast.makeText(requireContext(),getText(R.string.ms_AddAlimento), Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_addAlimentoFragment_to_nav_home)
