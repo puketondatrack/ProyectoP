@@ -40,7 +40,7 @@ class HomeFragment : Fragment() {
         reciclador.adapter = alimentoAdapter
         reciclador.layoutManager = LinearLayoutManager(requireContext())
 
-        homeViewModel.obtenerAlimentos.observe(viewLifecycleOwner){
+        homeViewModel.obtenerAlimento.observe(viewLifecycleOwner){
                 alimentos -> alimentoAdapter.setAlimentos(alimentos)
 
         }

@@ -17,5 +17,5 @@ data class Alimento(
     @ColumnInfo(name="descripcion")
     val decripcion: String?,
     @ColumnInfo(name="calorias")
-    val calorias: String?
+    val calorias: String?,
 ):Parcelable

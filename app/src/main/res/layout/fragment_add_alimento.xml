@@ -14,8 +14,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/NombreAlimento"
-        android:inputType="textPersonName"
-        android:padding="20dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_descripcion"
@@ -40,8 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/btAddAlimento"
-        android:padding="20dp"
-        android:textColorHint="#FAFAFA" />
+        android:padding="20dp" />
+
 
 </LinearLayout>
-
