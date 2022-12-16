@@ -53,7 +53,7 @@ class updateAlimentoFragment : Fragment() {
 
         if (nombre.isNotEmpty()) {
             val alimento =
-                Alimento(args.alimentoArg.id, nombre, descripcion, calorias)
+                Alimento(args.alimentoArg.id, nombre, descripcion, calorias,args.alimentoArg.rutaAudio, args.alimentoArg.rutaImagen)
             homeViewModel.guardarAlimento(alimento)
             Toast.makeText(
                 requireContext(),

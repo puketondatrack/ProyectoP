@@ -18,4 +18,8 @@ data class Alimento(
     val decripcion: String?,
     @ColumnInfo(name="calorias")
     val calorias: String?,
+    @ColumnInfo(name="rutaAudio")
+    val rutaAudio: String?,
+    @ColumnInfo(name="rutaImagen")
+    val rutaImagen: String?,
 ):Parcelable
