@@ -1,32 +1,33 @@
 package com.example.proyectop.viewModel
 
 import android.app.Application
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import com.example.proyectop.data.AlimentoDao
-import com.example.proyectop.model.Alimentos
+import androidx.lifecycle.*
+import com.example.proyectop.data.AlimentoDatabase
+import com.example.proyectop.model.Alimento
+
 import com.example.proyectop.repository.AlimentoRepository
+import kotlinx.coroutines.launch
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var repository: AlimentoRepository = AlimentoRepository(AlimentoDao())
-    val obtenerAlimento: MutableLiveData<List<Alimentos>>
+    private val repository: AlimentoRepository
+    val obtenerAlimentos: LiveData<List<Alimento>>
 
 
     init {
 
-        obtenerAlimento = repository.obtenerAlimento
+        val alimentoDao = AlimentoDatabase.getDatabase(application).alimentoDao()
+        repository = AlimentoRepository(alimentoDao)
+        obtenerAlimentos = repository.obtenerAlimento
 
     }
 
-    fun guardarAlimento(alimentos: Alimentos) {
-        repository.guardarAlimento(alimentos)
+    fun guardarAlimento(alimento: Alimento) {
+        viewModelScope.launch {(repository.guardarAlimento(alimento))}
     }
 
-    fun eliminarAlimento(alimentos: Alimentos) {
-        repository.eliminarAlimento(alimentos)
+    fun eliminarAlimento(alimento: Alimento) {
+        viewModelScope.launch {(repository.eliminarAlimento(alimento))}
 
     }
 }

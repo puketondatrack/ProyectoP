@@ -1,17 +1,22 @@
 package com.example.proyectop.repository
 
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+
 import com.example.proyectop.data.AlimentoDao
-import com.example.proyectop.model.Alimentos
+import com.example.proyectop.model.Alimento
+
 
 class AlimentoRepository(private val alimentoDao: AlimentoDao) {
-
-    fun guardarAlimento(alimentos: Alimentos){
-        alimentoDao.guardarAlimento(alimentos)
+    suspend fun guardarAlimento(alimento: Alimento){
+        if (alimento.id == 0){
+            alimentoDao.agregarAlimento(alimento)
+        }
+        else{
+            alimentoDao.actualizarAlimento(alimento)
+        }
     }
-    fun eliminarAlimento(alimentos: Alimentos){
-        alimentoDao.eliminarAlimento(alimentos)
+    suspend fun eliminarAlimento(alimento: Alimento){
+        alimentoDao.eliminarAlimento(alimento)
     }
-val obtenerAlimento: MutableLiveData<List<Alimentos>> = alimentoDao.getalimento()
-
+    val obtenerAlimento: LiveData<List<Alimento>> = alimentoDao.getAlimentos()
 }

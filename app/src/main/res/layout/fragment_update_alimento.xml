@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="ui.home.addAlimentoFragment">
-
+    tools:context=".ui.home.updateAlimentoFragment">
 
     <EditText
         android:id="@+id/et_nombre"
@@ -22,8 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/descripAlimento"
-        android:inputType="textPersonName"
-        android:padding="20dp" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/et_calorias"
@@ -31,15 +29,22 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/calorias"
-        android:inputType="textPersonName"
-        android:padding="20dp" />
+        android:inputType="number" />
+
 
     <Button
-        android:id="@+id/bt_Agregar"
+        android:id="@+id/bt_update_alimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/btAddAlimento"
-        android:padding="20dp" />
+        android:padding="10dp"
+        android:text="@string/btUpdateLugar"
+        android:textColorHint="@color/white" />
 
-
+    <Button
+        android:id="@+id/bt_delete_alimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/bt_delete_alimento"
+        android:textColorHint="@color/white" />
 </LinearLayout>

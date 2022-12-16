@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_home_to_addAlimentoFragment"
             app:destination="@id/addAlimentoFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_updateAlimentoFragment"
+            app:destination="@id/updateAlimentoFragment" />
     </fragment>
 
     <fragment
@@ -28,11 +31,23 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/addAlimentoFragment"
-        android:name="com.example.proyectop.addAlimentoFragment"
+        android:name="com.example.proyectop.ui.home.addAlimentoFragment"
         android:label="fragment_add_alimento"
         tools:layout="@layout/fragment_add_alimento" >
         <action
             android:id="@+id/action_addAlimentoFragment_to_nav_home"
             app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAlimentoFragment"
+        android:name="com.example.proyectop.ui.home.updateAlimentoFragment"
+        android:label="fragment_update_alimento"
+        tools:layout="@layout/fragment_update_alimento" >
+        <action
+            android:id="@+id/action_updateAlimentoFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="alimentoArg"
+            app:argType="com.example.proyectop.model.Alimento" />
     </fragment>
 </navigation>

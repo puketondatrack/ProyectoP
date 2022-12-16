@@ -17,12 +17,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="NombreLugar">Nombre del Lugar</string>
-    <string name="CorreoLugar">Email</string>
-    <string name="descripAlimento">"""""""</string>
-    <string name="precioAlimento">precio</string>
+    <string name="NombreAlimento">Nombre del Alimento</string>
+    <string name="calorias">Calorias</string>
+    <string name="descripAlimento">Descripcion:"""""""</string>
 
-    <string name="btAddAlimento">AGREGAR alimento</string>
+
+    <string name="btAddAlimento">Agregar Alimento</string>
     <string name="ms_AddAlimento">alimento AGREGADO </string>
     <string name="ms_FaltaValores">Faltan valores</string>
     <string name="ms_UpdateAlimento">alimento modificado</string>
