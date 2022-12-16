@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/descripAlimento"
-        android:inputType="numberDecimal" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_calorias"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/calorias"
-        android:inputType="number" />
+        android:inputType="textPersonName" />
 
 
     <Button
@@ -47,4 +47,7 @@
         android:padding="10dp"
         android:text="@string/bt_delete_alimento"
         android:textColorHint="@color/white" />
+
+
 </LinearLayout>
+

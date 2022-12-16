@@ -13,6 +13,7 @@ import com.example.proyectop.databinding.FragmentAddAlimentoBinding
 import com.example.proyectop.model.Alimento
 import com.example.proyectop.viewModel.HomeViewModel
 
+
 class addAlimentoFragment : Fragment() {
     private var _binding: FragmentAddAlimentoBinding? = null
     private val binding get() = _binding!!
@@ -26,7 +27,8 @@ class addAlimentoFragment : Fragment() {
         homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentAddAlimentoBinding.inflate(inflater, container, false)
 
-        binding.btAgregar.setOnClickListener { agregarAlimento()   }
+        binding.btAgregar.setOnClickListener {
+            agregarAlimento() }
 
         return binding.root
     }
